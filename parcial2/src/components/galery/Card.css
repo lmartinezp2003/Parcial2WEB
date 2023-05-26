@@ -1,0 +1,9 @@
+.reseniaCard {
+    display: flex;
+    border: .1em solid #000000;
+    border-radius: 1em;
+    border-color: #000000;
+    flex-direction: column;
+    padding: 5% 10%;
+    margin: 5% 5%;
+}

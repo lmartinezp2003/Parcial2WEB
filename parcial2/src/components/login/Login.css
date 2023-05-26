@@ -1,0 +1,32 @@
+
+.ByMe-container {
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+  }
+
+.ByMe-Card {
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+.ByMe-form {
+    margin: 30px;
+    border-radius: 8px;
+    background-color: white;
+    justify-content: center;
+  }
+  
+.ByMe-form-content {
+    justify-content: center;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  
+.ByMe-h3{
+  margin-top: 30px;
+}
+
+.ByMe-Margin{
+  margin: 30px;
+}
