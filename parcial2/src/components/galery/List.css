@@ -8,3 +8,13 @@
       grid-template-columns: 1fr;
     }
   }
+
+  .ByMe-TableHeader{
+    background: #333A40;
+    color: white;
+  }
+
+  .ByMe-Margin{
+    margin: 30px;
+  }
+  

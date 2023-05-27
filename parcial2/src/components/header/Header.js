@@ -5,7 +5,9 @@ function Header() {
     return (
     <div>
         <h1 className="ByMe-Title">El aroma mágico</h1>
+        <hr className="ByMe-Sep"/>
         <img src={Image} className="ByMe-img" alt="image" ></img>
+        <hr className="ByMe-Sep"/>
     </div>
     );
   }

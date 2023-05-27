@@ -1,0 +1,18 @@
+{   
+    "inicio": "Log in",
+    "precio": "Price",
+    "tipo": "Type",
+    "notas": "Notes",
+    "fecha": "Date",
+    "cultivadoA": "Cultivated at a height of ",
+    "mnsm": " amsl",
+    "region": "Region",
+    "nombre": "Name", 
+    "loginError": "Authentication error. Check your credentials", 
+    "usuario": "User Name",
+    "contraseña": "Password",   
+    "ingresar": "SingIn",
+    "cancelar": "Cancel",
+    "contacto": "Contact Us: "
+
+}

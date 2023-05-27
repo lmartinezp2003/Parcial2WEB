@@ -1,30 +1,31 @@
 import { Button, Card, Col, Form, Row } from "react-bootstrap";
+import { FormattedMessage } from "react-intl";
 import React, { useState } from 'react';
 import './Login.css';
 
 const Login = () => {
 
-  const [usuario, setEmail] = useState('');
+  const [usuario, setUusario] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
+  const handleUsuarioChange = (e) => {
+    setUusario(e.target.value);
   };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
-
+  const handleSubmit = async e => {
+    e.preventDefault();
     login(usuario, password)
       .then((response) => {
-        console.log(response.status)
+        console.log(response)
         if (response.status === 200) {
-          window.location.href = 'http://localhost:3001/cafes';
+          window.location.href = 'http://localhost:3000/cafes';
         } else {
-          setError('Error de autenticacion. Revise sus credenciales.');
+          setError(<FormattedMessage id="loginError"/>);
         }
       })
       .catch((error) => {
@@ -40,32 +41,32 @@ const Login = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ usuario, password }),
+      body: JSON.stringify({"login": usuario, "password": password }),
     });
   };
 
   return (
-    <div>
-      <h3 className="ByMe-h3">Inicio de sesion</h3>
+    <div className="ByMe-Div">
+      <h3 className="ByMe-h3"><FormattedMessage id="inicio"/></h3>
       <div className="ByMe-container">
-        <Card className="ByMy-Card shadow-none rounded-0">
+        <Card className="ByMe-Card shadow-none rounded-0">
               {error && <div className="alert alert-danger">{error}</div>}
               <Form className="ByMe-form" onSubmit={handleSubmit}>
-                <div className="ByMe-form-content">
+                <div className="ByMe-form-content ByMe-Margin">
                   <div className="form-group text-start">
-                    <label htmlFor="usuario" className="form-label">Nombre de Usuario</label>
-                    <input type="usuario" className="form-control mt-1" id="email" value={usuario} onChange={handleEmailChange} />
+                    <label htmlFor="usuario" className="ByMe-LabelForm"><FormattedMessage id="usuario"/></label>
+                    <input type="usuario" className="form-control mt-1 rounded-0 ByMe-FormColor" id="email" value={usuario} onChange={handleUsuarioChange} />
                   </div>
                   <div className="form-group mt-3 text-start">
-                    <label htmlFor="password" className="form-label">Contraseña</label>
-                    <input type="password" className="form-control mt-1" id="password" value={password} onChange={handlePasswordChange} />
+                    <label htmlFor="password" className="ByMe-LabelForm"><FormattedMessage id="contraseña"/></label>
+                    <input type="password" className="form-control mt-1 rounded-0 ByMe-FormColor" id="password" value={password} onChange={handlePasswordChange} />
                   </div>
                   <div class="row ByMe-Margin">
                     <Col>
-                      <button type="submit" className="btn btn-primary">Ingresar</button>
+                      <button type="submit" className="btn btn-primary ByMe-ButtonColorIngresar rounded-0"><FormattedMessage id="ingresar"/></button>
                     </Col>
                     <Col>
-                      <button className="btn btn-primary">Cancelar</button>
+                      <button className="btn btn-primary ByMe-ButtonColorCancelar rounded-0"><FormattedMessage id="cancelar"/></button>
                     </Col>
                   </div>
                 </div>

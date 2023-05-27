@@ -1,20 +1,22 @@
+.ByMe-Div{
+  margin-left: 20%;
+  margin-right: 20%;
+}
 
 .ByMe-container {
     justify-content: center;
     align-items: center;
-    margin: 100px;
   }
 
 .ByMe-Card {
     box-shadow: none;
     border-radius: 0;
+    border: 1px solid black;
   }
 
 .ByMe-form {
-    margin: 30px;
-    border-radius: 8px;
-    background-color: white;
     justify-content: center;
+    background: rgba(224, 187, 187, 0.2);
   }
   
 .ByMe-form-content {
@@ -24,9 +26,41 @@
   }
   
 .ByMe-h3{
-  margin-top: 30px;
+  text-align: left;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .ByMe-Margin{
   margin: 30px;
+}
+
+.ByMe-FormColor{
+  background: #D9D9D9;
+}
+
+.ByMe-ButtonColorCancelar{
+  width: 253px;
+  height: 53px;
+  background: #E75D5D;
+
+}
+
+.ByMe-ButtonColorIngresar{
+  width: 253px;
+  height: 53px;
+  background: #8FA98F;
+
+}
+
+
+.ByMe-LabelForm{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }

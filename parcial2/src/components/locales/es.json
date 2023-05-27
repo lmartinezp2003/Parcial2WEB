@@ -1,0 +1,18 @@
+{
+    "inicio": "Inicio de Sesion",
+    "precio": "Precio",
+    "tipo": "Tipo",
+    "notas": "Notas",
+    "fecha": "Fecha",
+    "cultivadoA": "Cultivado a una altura de ",
+    "mnsm": " msnm",
+    "region": "Region",
+    "nombre": "Nombre", 
+    "loginError": "Error de autenticación. Revise sus credenciales", 
+    "usuario": "Nombre de Usuario",
+    "contraseña": "Contraseña",
+    "ingresar": "Ingresar",
+    "cancelar": "Cancelar",
+    "contacto": "Contactanos: "
+
+}
